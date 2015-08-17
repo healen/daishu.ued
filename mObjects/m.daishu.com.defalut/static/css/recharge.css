@@ -77,3 +77,43 @@ body {
   color: #ffffff;
   box-shadow: 0px 0px 0px #ffffff;
 }
+.body-content {
+  background: #ffffff;
+}
+.mybottom {
+  margin: 0.8rem 0.8rem;
+}
+.alert {
+  padding: 1rem 0rem;
+  color: #ee0000;
+  margin-left: 5px;
+}
+.lis {
+  margin: 0px 2px;
+  border: 1px solid #dfe3f0;
+  margin-top: -1px;
+}
+.lis:last-child {
+  border-bottom: 1px solid #dfe3f0 !important;
+}
+.payselect {
+  color: #3dbdff;
+  border: 1px solid #3dbdff;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+.title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  padding: 0.5rem 0rem;
+}
+.flex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 5px;
+}

@@ -9,6 +9,9 @@
 <body>
 
 
+  <a href="javascript:void(0)" class="tk">tk</a>
+
+
 
     <div id="popup"></div>
 
@@ -75,7 +78,9 @@
    <script type="text/javascript" src="../public/scripts/popup.js"></script>
 
    <script type="text/javascript">
-       $.popup({
+
+   $(".tk").on("click",function(){
+    $.popup({
             title: "", //标题
             content: function(){
               return $("#popcontent").html();
@@ -97,6 +102,9 @@
                 // }
             ]
        })
+
+   })
+       
    </script>
    
     

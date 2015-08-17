@@ -32,6 +32,34 @@
                 <div class="input input-warp">
                    <input type="number" placeholder="充值金额" />
                 </div>
+
+                <div class="title">
+                    <div class="flex">支付方式：<span class="payselect">连连支付</span></div> 
+                    <!-- <a href="javascript:void(0)" class="more">更多<i class="icoFt jt icon-jiantou"></i></a> -->
+                </div>
+
+
+                <div class="paybox">
+                    <div class="banklist">
+                        <label class="lis on">
+                            <div class="content">
+                                <h2>连连支付</h2>
+                            </div>
+                            <input type="radio" name="zf" class="radio" checked="checked">
+                            <i class="select icoFt icon-checkmark"></i>
+                        </label>
+                        <label class="lis">
+                            <div class="content">
+                                <h2>贝付</h2>
+                            </div>
+                            <input type="radio" class="radio" name="zf">
+                            <i class="select icoFt icon-checkmark"></i>
+                        </label>
+                    </div>
+                    <div class="alert nopayfun">没有支付方式</div>
+                </div>
+              
+
                 <div class="btnbox">
                     <input type="submit" value="确认充值">
                 </div>
@@ -44,5 +72,28 @@
 	</section>
 	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
 	<!--页面JS-->
+
+    <script>
+        (function(){
+            $(".more").on("click",function(){
+                if($(".paybox").is(":hidden")){
+                   $(".paybox").show(); 
+                }else{
+                    $(".paybox").hide();
+                }
+            })
+
+            $("input[name='zf']").on("change",function(){
+                var html=""
+                if($(this)[0].checked=true){
+                    html=$(this).parent().find("h2").html();
+                    $(".payselect").html(html)
+                }
+
+            })
+
+
+        })()
+    </script>
 </body>
 </html>

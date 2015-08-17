@@ -9,8 +9,7 @@
         var docuemntW=$(document).width();
         var documentH=$(document).height();
 
-        var dialogW,dialogH
-        
+        var dialogW,dialogH;
         var Default = {
                 title: "标题", //标题
                 content: "内容", //内容
@@ -31,8 +30,6 @@
                     // }
                 ]
         };
-
-
         var obj = $.extend(Default, opts);
 
          /*是否关闭*/
@@ -67,7 +64,7 @@
                 + "</div>"
                 + "</div>"
                 + "</div>";
-        $("#popup").html(popupHTML);
+        $("#popup")[0].innerHTML=popupHTML;
 
         $(".popup .mask").css({
             "width":docuemntW,
@@ -96,8 +93,6 @@
                 (obj.btnList[i]['callback'])&&(obj.btnList[i]['callback'])();
             });
         }
-
-
         $(".popup a.close").live("click", function() {
             $.close(".popup");
             (obj.closeCallback)&&(obj.closeCallback)();
@@ -117,6 +112,4 @@
             callback && callback();
         };
     }
-
-
 })(jQuery)

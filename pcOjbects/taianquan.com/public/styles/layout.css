@@ -8219,3 +8219,21 @@ a.ui-poptip-close:hover {
   top: 4px;
   margin: 0 5px;
 }
+.page-list {
+  text-align: center;
+  padding: 10px 0px;
+}
+.page-list a {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.page-list a.num {
+  border: 1px solid #dddddd;
+}
+.page-list a.num.on {
+  border: 1px solid #f39913;
+  background: #f39913;
+  color: #fff;
+}
