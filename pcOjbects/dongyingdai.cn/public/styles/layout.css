@@ -1901,6 +1901,7 @@ img.w100 {
   background: #fbffd8;
   border: 2px solid #2ea7e0;
   border-radius: 10px;
+  min-width: 160px;
 }
 .tool-tips-up {
   position: absolute;

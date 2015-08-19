@@ -7,6 +7,7 @@
 body{
 	background-color: @querBgColor;
 }
+._input(warp);
 .myhead{
 	padding: 0rem 1rem;
 	.-bg ._color(@barBgColor);
@@ -70,13 +71,24 @@ body{
 		}
 	}
 }
-._input(warp);
 .btnbox{
 	.-display ._box();
 	input{
 		._btn();
 		.-display ._flex(1);
 		box-shadow: 0px 4px 0px lighten(@markColor, 20%);
+		&.quxiao{
+			margin-right: 0.5rem;
+			background: @keyColor;
+			box-shadow: 0px 4px 0px lighten(@keyColor, 20%);
+			&:active{
+				background: darken(@keyColor,10%)
+			}
+			&:visited{
+		        background: @keyColor;
+		    }
+
+		}
 	}
 	padding-top: 1rem;
 }
@@ -85,5 +97,62 @@ body{
 	.-bg ._img('@{bgURL}slogin1.png');
 	.-bg ._size(contain);
 	margin-bottom: 10px;
+}
+
+.borrowbox{
+	.-display ._box();
+	.input{
+		.-display ._flex(1);
+		margin-right: 1rem;
+	}
+}
+.selectdate{
+	width:10rem;
+	height: 4rem;
+	border-radius: 2rem;
+	position: relative;
+	overflow: hidden;
+	div{
+		font-size: 1.6rem;
+		&.month{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 4rem;
+			width: 5rem;
+			background: @inputBgColor;
+			display: block;
+			text-align: center;
+			line-height: 4rem;
+		}
+
+		&.year{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			height: 4rem;
+			width: 5rem;
+			background: @inputBgColor;
+			display: block;
+			text-align: center;
+			line-height: 4rem;
+		}
+		&.on{
+			color: #ffffff;
+			background: @linkColor;
+		}
+
+
+	}
+}
+.textareas{
+	background: @inputBgColor;
+	display: block;
+	.-display ._flex(1);
+	height: 8rem;
+	border-radius: 0.5rem;
+	padding:1rem;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
 }
 

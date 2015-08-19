@@ -20,7 +20,8 @@
   -moz-box-orient: vertical;
   -webkit-box-orient: vertical;
   box-orient: vertical;
-  height: 12rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #dfe3f0;
   position: relative;
 }
@@ -83,7 +84,13 @@
   background: #dfe3f0;
 }
 .mybottom {
-  padding: 0.8rem 1rem;
+  background: #ffffff;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+.mybottom section.content-tab {
+  background: #ffffff;
+  margin-top: 0px;
 }
 .mybottom .yue {
   height: 4.4rem;
@@ -123,8 +130,8 @@
 }
 .lclist {
   display: block;
-  margin: 1.5rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0rem;
+  margin: 0rem 1.5rem;
   border-bottom: 1px solid #dfe3f0;
   position: relative;
   display: -webkit-box;
@@ -137,6 +144,25 @@
   -moz-box-pack: start;
   -webkit-box-pack: start;
   box-pack: start;
+}
+.lclist div {
+  padding: 5px 0px;
+  width: 33%;
+  text-align: center;
+}
+.lclist div:first-child {
+  text-align: left;
+  color: #a2a9b2;
+}
+.lclist div:last-child {
+  text-align: right;
+  color: #a2a9b2;
+}
+.lclist:active {
+  background: #eeeeee;
+}
+.lclist:visited {
+  background: #ffffff;
 }
 .lclist img {
   width: 3.5rem;
@@ -151,6 +177,7 @@
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  color: #a2a9b2;
 }
 .lclist a.paybtn {
   position: absolute;
@@ -265,6 +292,41 @@
   height: 2px;
   right: 4px;
   top: 10px;
+}
+.btn_border {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: 1px solid #a2a9b2;
+  color: #a2a9b2;
+  padding: 0px 1.2rem;
+  margin: 1rem 0rem;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  padding: 0px 20px;
+}
+.btn_border i {
+  font-size: 12px;
+}
+.btn_border:active {
+  border: 1px solid #868f9b;
+  color: #868f9b;
+  background: #eeedfa;
+}
+.btn_border:visited {
+  border: 1px solid #a2a9b2;
+  color: #a2a9b2;
+  background: #ffffff;
 }
 .content-tab {
   background: #ffffff;

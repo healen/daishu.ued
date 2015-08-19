@@ -208,10 +208,10 @@ body{
 
 
 .navbtn {
-  height: 4.4rem;
-  background: @barBgColor;
+  height: 4.9rem;
+  background: rgba(0,0,0,0.6);
   border-top: 1px solid @borderColor;
-  line-height: 4.1rem;
+ 
   color: @barColor;
   width: 100%;
   position: fixed;
@@ -222,24 +222,30 @@ body{
   a {
 		.-display ._box();
 		.-display ._box-align(center,center);
+		.-display ._orient(vertical);
 		.-display ._flex(1);
 		min-width: 33.33%;
-		color: @barColor;
-		border-right: 1px solid @borderColor;
-
+		color: @assistColor;
+		border-right: 1px solid rgba(255,255,255,0.1);
+		&:last-child{
+			border-right: none;
+		}
+		font-weight: 600;
 		i{
-			padding-right: 3px;
-			font-size: @titleFontSize;
-			font-weight: 600;
+			font-size: @titleFontSize+0.2;
 			vertical-align: text-bottom;
-
-
+			display: block;
+			margin-top: 5px;
+			font-weight: 100;
 		}
 		&:active {
-		  background: @docBgColor;
+		  background:lighten(rgba(255,255,255,0.1), 20%);
 		}
 		&:visited {
 		  background:#ffffff;
+		}
+		&.on{
+			color: @linkColor;
 		}
 	}
 }
@@ -354,7 +360,6 @@ i.icoFt{
 .icon-coin-yen:before {
 	content: "\e60c";
 }
-
 .icon-heart:before {
 	content: "\e60b";
 }
@@ -373,34 +378,39 @@ i.icoFt{
 .icon-loading5:before {
 	content: "\e60a";
 }
-
-.icon-huiyuan:before {
-  content: "\e600";
-}
-.icon-huodong:before {
-  content: "\e601";
-}
-.icon-jiantou:before {
-  content: "\e602";
-}
-.icon-mima:before {
-  content: "\e603";
-}
-.icon-qian:before {
-  content: "\e604";
-}
 .icon-s:before {
-  content: "\e958";
+	content: "\e958";
 }
 .icon-cog:before {
-  content: "\e994";
+	content: "\e994";
 }
 .icon-cross:before {
-  content: "\ea0f";
+	content: "\ea0f";
 }
 .icon-checkmark:before {
-  content: "\ea10";
+	content: "\ea10";
 }
 .icon-cool:before {
-  content: "\e605";
+	content: "\e605";
+}
+.icon-wenzhang:before {
+	content: "\e60d";
+}
+.icon-hy:before {
+	content: "\e60e";
+}
+.icon-huiyuan:before {
+	content: "\e600";
+}
+.icon-huodong:before {
+	content: "\e601";
+}
+.icon-jiantou:before {
+	content: "\e602";
+}
+.icon-mima:before {
+	content: "\e603";
+}
+.icon-qian:before {
+	content: "\e604";
 }

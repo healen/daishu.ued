@@ -465,10 +465,9 @@ body > .warp {
   margin-top: 20px;
 }
 .navbtn {
-  height: 4.4rem;
-  background: #ffffff;
+  height: 4.9rem;
+  background: rgba(0, 0, 0, 0.6);
   border-top: 1px solid #dfe3f0;
-  line-height: 4.1rem;
   color: #535a66;
   width: 100%;
   position: fixed;
@@ -491,26 +490,37 @@ body > .warp {
   -moz-box-pack: center;
   -webkit-box-pack: center;
   box-pack: center;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   min-width: 33.33%;
-  color: #535a66;
-  border-right: 1px solid #dfe3f0;
+  color: #b2b2b2;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+}
+.navbtn a:last-child {
+  border-right: none;
 }
 .navbtn a i {
-  padding-right: 3px;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.7rem;
   vertical-align: text-bottom;
+  display: block;
+  margin-top: 5px;
+  font-weight: 100;
 }
 .navbtn a:active {
-  background: #eeedfa;
+  background: rgba(255, 255, 255, 0.1);
 }
 .navbtn a:visited {
   background: #ffffff;
+}
+.navbtn a.on {
+  color: #3dbdff;
 }
 .loading {
   position: fixed;
@@ -628,21 +638,6 @@ i.icoFt {
 .icon-loading5:before {
   content: "\e60a";
 }
-.icon-huiyuan:before {
-  content: "\e600";
-}
-.icon-huodong:before {
-  content: "\e601";
-}
-.icon-jiantou:before {
-  content: "\e602";
-}
-.icon-mima:before {
-  content: "\e603";
-}
-.icon-qian:before {
-  content: "\e604";
-}
 .icon-s:before {
   content: "\e958";
 }
@@ -657,4 +652,25 @@ i.icoFt {
 }
 .icon-cool:before {
   content: "\e605";
+}
+.icon-wenzhang:before {
+  content: "\e60d";
+}
+.icon-hy:before {
+  content: "\e60e";
+}
+.icon-huiyuan:before {
+  content: "\e600";
+}
+.icon-huodong:before {
+  content: "\e601";
+}
+.icon-jiantou:before {
+  content: "\e602";
+}
+.icon-mima:before {
+  content: "\e603";
+}
+.icon-qian:before {
+  content: "\e604";
 }

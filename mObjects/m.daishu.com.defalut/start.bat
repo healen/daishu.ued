@@ -1,1 +1,1 @@
-http-server -a 192.168.1.103 -p 8888
+http-server -a 192.168.1.24 -p 8888

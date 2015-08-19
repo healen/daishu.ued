@@ -25,6 +25,7 @@
 			line-height: 20px;
 			text-align: center;
 			color: @assistColor;
+
 		}
 		img{
 			display: block;
@@ -57,6 +58,10 @@
 				color: @assistColor;
 				font-size: 1.4rem;
 				line-height: 1.4rem;
+				span{
+					color: @markColor;
+					font-size: 1.6rem
+				}
 			}
 
 			
@@ -69,7 +74,13 @@
 	}
 }
 .mybottom{
-	padding: 0.8rem 1rem;
+	background: #ffffff;
+	margin-top: 10px;
+	padding-top: 5px;
+	section.content-tab{
+		background: #ffffff;
+		margin-top: 0px;
+	}
 	.yue{
 		height: 4.4rem;
 		background: @querBgColor;
@@ -88,9 +99,6 @@
 			&:last-child{
 				border-right: none;
 			}
-
-			
-
 		}
 		margin-bottom: 1rem;
 	}
@@ -103,12 +111,20 @@
 
 .lclist{
 	display: block;
-	margin: 1.5rem;
-	padding-bottom: 1rem;
+	padding: 1rem 0rem;
+	margin: 0rem 1.5rem;
 	border-bottom: 1px solid @borderColor;
 	position: relative;
 	.-display ._box();
 	.-display ._box-align(center,start);
+
+	&:active {
+		  background:#eeeeee;
+	}
+	&:visited {
+	  background:#ffffff;
+	}
+
 	img{
 		.-box ._size(3.5rem,3.5rem);
 		display: block;
@@ -121,6 +137,7 @@
 
 	.name{
 		.-display ._flex(1);
+		color: @minorColor;
 	}
 	a{
 		&.paybtn{
@@ -221,6 +238,14 @@
 		}
 	}
 	
+}
+
+.big{
+	font-size: 1.6rem;
+	color: #666666;
+}
+.right{
+	text-align: right;
 }
 
 
