@@ -1,10 +1,6 @@
 /******************个人中心设置样式********************/
-body {
-  background: #ffffff;
-}
 .body-content {
   padding: 0rem 0rem;
-  background: #ffffff;
 }
 .myhead {
   padding: 0rem 1rem;
@@ -97,15 +93,32 @@ body {
   padding: 0.8rem 1rem;
 }
 .mybottom .listpx {
-  border: 1px solid #dfe3f0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  border: 1px solid #3dbdff;
+  background: #3dbdff;
   padding: 1rem;
   border-radius: 0.5rem;
-  background: #ffffff;
   display: -webkit-box;
   display: -moz-box;
   display: -o-box;
   display: box;
   margin-bottom: 1rem;
+}
+.mybottom .listpx .jiao {
+  width: 1rem;
+  height: 1rem;
+  background: #3dbdff;
+  position: absolute;
+  left: -0.5rem;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: -0.5rem;
 }
 .mybottom .listpx img {
   width: 70px;
@@ -120,7 +133,7 @@ body {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #a2a9b2;
+  color: #ddd;
 }
 .mybottom .listpx div section {
   margin-top: 0.5rem;
@@ -137,12 +150,41 @@ body {
   -ms-flex: 1;
   flex: 1;
 }
+.mybottom .listpx:active {
+  background: #008dd6;
+  border-color: #008dd6;
+}
+.mybottom .listpx:active .jiao {
+  background: #008dd6;
+}
+.mybottom .listpx:visited {
+  background: #3dbdff;
+  border-color: #3dbdff;
+}
+.mybottom .listpx:visited .jiao {
+  background: #3dbdff;
+}
 .right {
   text-align: right;
+  margin-right: 0.5rem;
+  animation: cloud2 200ms linear infinite alternate;
+  -moz-animation: cloud2 200ms linear infinite alternate;
+  /* Firefox */
+  -webkit-animation: cloud2 200ms linear infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: cloud2 200ms linear infinite alternate;
+  /* Opera */
+  font-size: 1.4rem;
+}
+.right i {
+  font-size: 1.2rem;
+}
+.right .jingxi {
+  font-weight: 100;
 }
 .big {
   font-size: 1.6rem;
-  color: #666666;
+  color: #ffffff;
 }
 .swiper-container {
   width: 100%;
@@ -175,4 +217,34 @@ body {
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #FFFFFF!important;
+}
+@-webkit-keyframes cloud2 {
+  form {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px reba(255, 255, 255, 0), -2px -2px 3px reba(255, 255, 255, 0);
+  }
+  to {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #e4ff00, -1px -1px 2px #e4ff00;
+  }
+}
+@-o-keyframes cloud2 {
+  form {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px reba(255, 255, 255, 0), -2px -2px 3px reba(255, 255, 255, 0);
+  }
+  to {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #e4ff00, -1px -1px 2px #e4ff00;
+  }
+}
+@keyframes cloud2 {
+  form {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px reba(255, 255, 255, 0), -2px -2px 3px reba(255, 255, 255, 0);
+  }
+  to {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #e4ff00, -1px -1px 2px #e4ff00;
+  }
 }

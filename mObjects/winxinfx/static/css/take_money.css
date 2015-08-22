@@ -184,8 +184,9 @@
   height: 4rem;
   border-radius: 2rem;
   display: block;
-  background: #3dbdff;
-  color: #ffffff;
+  background: none;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
   font-size: 1.6rem;
   width: auto;
   height: auto;
@@ -198,10 +199,11 @@
   margin-top: -1rem;
 }
 .lclist a.paybtn:active {
-  background: #0aacff;
+  border-color: #0aacff;
+  background: #eeedfa;
 }
 .lclist a.paybtn:visited {
-  background: #0aacff;
+  border-color: #3dbdff;
 }
 .lclist a.paybtn.disable {
   background: #ccc;
@@ -321,12 +323,10 @@
 .btn_border:active {
   border: 1px solid #868f9b;
   color: #868f9b;
-  background: #eeedfa;
 }
 .btn_border:visited {
   border: 1px solid #a2a9b2;
   color: #a2a9b2;
-  background: #ffffff;
 }
 .content-tab {
   background: #ffffff;

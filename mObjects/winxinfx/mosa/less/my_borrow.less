@@ -76,16 +76,16 @@ body{
 	input{
 		._btn();
 		.-display ._flex(1);
-		box-shadow: 0px 4px 0px lighten(@markColor, 20%);
+		// box-shadow: 0px 4px 0px lighten(@markColor, 20%);
 		&.quxiao{
 			margin-right: 0.5rem;
-			background: @keyColor;
-			box-shadow: 0px 4px 0px lighten(@keyColor, 20%);
+			border-color: @keyColor;
+			// box-shadow: 0px 4px 0px lighten(@keyColor, 20%);
 			&:active{
-				background: darken(@keyColor,10%)
+				border-color: darken(@keyColor,10%)
 			}
 			&:visited{
-		        background: @keyColor;
+		        border-color: @keyColor;
 		    }
 
 		}

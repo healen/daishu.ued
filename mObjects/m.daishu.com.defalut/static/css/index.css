@@ -201,7 +201,6 @@
 }
 .intopic .btn_border {
   position: relative;
-  display: block;
   display: -webkit-box;
   display: -moz-box;
   display: -o-box;
@@ -217,6 +216,8 @@
   border: 1px solid #a2a9b2;
   color: #a2a9b2;
   padding: 0px 1.2rem;
+  display: block;
+  line-height: 3rem;
   margin-top: 1rem;
   margin-bottom: 1px;
   z-index: 2;
@@ -299,37 +300,39 @@
   display: box;
   margin: 0rem auto;
 }
-.intopic .bottonbox input {
+.intopic .bottonbox a {
   height: 4rem;
   border-radius: 2rem;
-  display: block;
   background: #3dbdff;
   color: #ffffff;
   font-size: 1.6rem;
+  text-align: center;
+  line-height: 4rem;
+  display: block;
 }
-.intopic .bottonbox input:active {
+.intopic .bottonbox a:active {
   background: #0aacff;
 }
-.intopic .bottonbox input:visited {
+.intopic .bottonbox a:visited {
   background: #0aacff;
 }
-.intopic .bottonbox input.disable {
+.intopic .bottonbox a.disable {
   background: #ccc;
   color: #ffffff;
   box-shadow: 0px 0px 0px #ffffff;
 }
-.intopic .bottonbox input.cz {
+.intopic .bottonbox a.cz {
   width: 8rem;
   margin-right: 1rem;
   background: #ffd93f;
 }
-.intopic .bottonbox input.cz:active {
+.intopic .bottonbox a.cz:active {
   background: #ffcf0c;
 }
-.intopic .bottonbox input.cz:visited {
+.intopic .bottonbox a.cz:visited {
   background: #ffd93f;
 }
-.intopic .bottonbox input.tx {
+.intopic .bottonbox a.tx {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex: 1;

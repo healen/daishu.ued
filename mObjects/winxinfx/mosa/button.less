@@ -16,12 +16,12 @@
 	&:active{
        border:1px solid darken(@color, 10%);
        color: darken(@color, 10%);
-       background: @docBgColor;
+
     }
     &:visited{
         border:1px solid @color;
 		color: @color;
-		background: #ffffff;
+	
     }
 }
 
@@ -29,14 +29,19 @@
 	height: @h;
 	border-radius:@rus;
 	display: block;
-	background: @bg;
-	color: @tColor;
+	background: none;
+	border:1px solid @bg;
+	color: @bg;
+	// color: @tColor;
 	font-size: 1.6rem;
 	 &:active{
-      background: darken(@bg, 10%)
+		border-color: darken(@bg, 10%);
+		border-color: darken(@bg, 10%);
+		background: @docBgColor;
+
     }
     &:visited{
-        background: darken(@bg, 10%)
+		border-color: @bg;
     }
 
     &.disable {

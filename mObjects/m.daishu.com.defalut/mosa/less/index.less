@@ -180,7 +180,11 @@
 	}
 	.btn_border{
 		position: relative;
+
 		._btn_border(3rem,@minorColor);
+		
+		display: block;
+		line-height: 3rem;
 		margin-top: 1rem;
 		margin-bottom: 1px;
 		z-index: 2;
@@ -243,8 +247,11 @@
 		.-display ._box();
 		margin: 0rem auto;
 		
-		input{
+		a{
 			._btn();
+			text-align: center;
+			line-height: 4rem;
+			display: block;
 			&.cz{
 				width: 8rem;
 				margin-right: 1rem;

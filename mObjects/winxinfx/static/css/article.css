@@ -1,13 +1,14 @@
 /******************表单样式********************/
 body {
   background-color: #ffffff;
+  height: 100%;
 }
 .tuijian {
-  height: 40px;
+  height: 100%;
   padding: 5px 10px;
   position: fixed;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   display: -webkit-box;
   display: -moz-box;
@@ -22,6 +23,7 @@ body {
   font-size: 1.2rem;
   top: 0px;
   left: 0px;
+  z-index: 999;
 }
 .tuijian .cont {
   -webkit-box-flex: 1;
@@ -46,8 +48,9 @@ body {
   height: 4rem;
   border-radius: 2rem;
   display: block;
-  background: #3dbdff;
-  color: #ffffff;
+  background: none;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
   font-size: 1.6rem;
   height: auto;
   border-radius: 4px;
@@ -55,17 +58,35 @@ body {
   font-size: 14px;
   height: 30px;
   line-height: 30px;
+  color: #ffffff;
+  background: #3dbdff;
 }
 .tuijian a:active {
-  background: #0aacff;
+  border-color: #0aacff;
+  background: #eeedfa;
 }
 .tuijian a:visited {
-  background: #0aacff;
+  border-color: #3dbdff;
 }
 .tuijian a.disable {
   background: #ccc;
   color: #ffffff;
   box-shadow: 0px 0px 0px #ffffff;
+}
+.tuijian a:active {
+  background-color: #0aacff;
+  color: #ffffff;
+}
+.tuijian a:visited {
+  background-color: #3dbdff;
+  color: #ffffff;
+}
+.blur_box {
+  -webkit-filter: blur(2px);
+  /* Chrome, Opera */
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
 }
 article h1 {
   font-size: 1.6rem;
@@ -121,12 +142,10 @@ article .content h2 span {
 .btn_border:active {
   border: 1px solid #0aacff;
   color: #0aacff;
-  background: #eeedfa;
 }
 .btn_border:visited {
   border: 1px solid #3dbdff;
   color: #3dbdff;
-  background: #ffffff;
 }
 .btn_border i.btn_ico {
   display: block;
@@ -156,21 +175,22 @@ article .content h2 span {
   height: 4rem;
   border-radius: 2rem;
   display: block;
-  background: #3dbdff;
-  color: #ffffff;
+  background: none;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
   font-size: 1.6rem;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  box-shadow: 0px 4px 0px #a3e0ff;
 }
 .btnbox input:active {
-  background: #0aacff;
+  border-color: #0aacff;
+  background: #eeedfa;
 }
 .btnbox input:visited {
-  background: #0aacff;
+  border-color: #3dbdff;
 }
 .btnbox input.disable {
   background: #ccc;
@@ -179,12 +199,82 @@ article .content h2 span {
 }
 .btnbox input.quxiao {
   margin-right: 0.5rem;
-  background: #ff5a49;
-  box-shadow: 0px 4px 0px #ffb6af;
+  border-color: #ff5a49;
 }
 .btnbox input.quxiao:active {
-  background: #ff2c16;
+  border-color: #ff2c16;
 }
 .btnbox input.quxiao:visited {
-  background: #ff5a49;
+  border-color: #ff5a49;
+}
+.tuijian .btnbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  padding-top: 1rem;
+}
+.tuijian .btnbox input {
+  height: 4rem;
+  border-radius: 2rem;
+  display: block;
+  background: none;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  font-size: 1.6rem;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.tuijian .btnbox input:active {
+  border-color: #0aacff;
+  background: #eeedfa;
+}
+.tuijian .btnbox input:visited {
+  border-color: #3dbdff;
+}
+.tuijian .btnbox input.disable {
+  background: #ccc;
+  color: #ffffff;
+  box-shadow: 0px 0px 0px #ffffff;
+}
+.tuijian .btnbox input.quxiao {
+  margin-right: 0.5rem;
+  background-color: #ff5a49;
+}
+.tuijian .btnbox input.quxiao:active {
+  background-color: #ff2c16;
+}
+.tuijian .btnbox input.quxiao:visited {
+  background-color: #ff5a49;
+}
+.pop {
+  height: 252px;
+  width: 234px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -126px;
+  margin-left: -117px;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+.pop i {
+  color: #978686;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.pop .txos {
+  width: 180px;
+  margin: 20px auto;
+  text-align: center;
+}
+.pop .txos .touxiang {
+  display: block;
+  margin: 15px auto 25px auto;
+  border-radius: 50%;
 }
