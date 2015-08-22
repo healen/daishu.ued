@@ -1,0 +1,76 @@
+//                    _ooOoo_
+//                   o8888888o
+//                   88" . "88
+//                   (| -_- |)
+//                   O\  =  /O
+//                ____/`---'\____
+//              .'  \\|     |//  `.
+//             /  \\|||  :  |||//  \
+//            /  _||||| -:- |||||-  \
+//            |   | \\\  -  /// |   |
+//            | \_|  ''\---/''  |   |
+//            \  .-\__  `-`  ___/-. /
+//          ___`. .'  /--.--\  `. . __
+//       ."" '<  `.___\_<|>_/___.'  >'"".
+//      | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+//      \  \ `-.   \_ __\ /__ _/   .-` /  /
+// ======`-.____`-.___\_____/___.-`____.-'======
+//                    `=---='
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//          佛祖保佑       永无BUG
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************表单样式********************/
+body{
+	
+	
+	height: 100%;
+	
+}
+.body-content{
+	background-image: url('@{bgURL}banckground.png');
+	background-size: cover;
+	height: 100%;
+	.-display ._box();
+	.-display ._box-align(center,center);
+	height: 100%;
+	.erweimabox{
+		width: 90%;
+		// height: 90%;
+		
+		background-color: rgba(255,255,255,0.7);
+		.-display ._box();
+		.-display ._box-align(center,center);
+		border-radius: 0.5rem;
+		.in{
+			.bold{
+				font-weight: bold;
+				font-size: 2rem;
+			}
+			padding-top: 1rem;
+			margin-top: 2.5rem;
+			margin-bottom: 2.5rem;
+			background-color: rgba(255,255,255,0.8);
+			width: 80%;
+			border-radius: 0.5rem;
+			text-align: center;
+			padding-bottom: 10px;
+			img{
+				display: block;
+				width: 90%;
+				margin: 10px auto;
+			}
+		}
+
+	}
+
+
+}
+
+body > .warp {
+  height: 100%;
+  padding-bottom: 0rem;
+}
