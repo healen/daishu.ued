@@ -29,73 +29,79 @@
 	<section class="warp">
 		<section class="body-content">
 
+            <div class="loadingbox">
+                
+                <div class="slidebox">
+                     <div class="banklist">
+                        <div class="lis">
+                            <div class="content">
+                                <p>2013.12.23</p>
+                                <div>充值120.00元</div>
+                                <span class="jxz">申请中</span>
+                                <i class="icoFt jt icon-jiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <div class="wapper">
+                            <div>
+                               
+                                <p>完成时间：2015.12.13</p>
+                                <p>充值金额：15,000,000元</p>
+                                <p>实际金额：30,000,000元</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="slidebox">
+                    <div class="banklist">
+                        <div class="lis">
+                            <div class="content">
+                                <p>2013.12.23</p>
+                                <div>充值120.00元</div>
+                                <span class="cg">成功</span>
+                                <i class="icoFt jt icon-jiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <section class="info">
+                        <div class="wapper">
+                             <div>
+                               
+                                <p>完成时间：2015.12.13</p>
+                                <p>充值金额：15,000,000元</p>
+                                <p>实际金额：30,000,000元</p>
+                            </div>
+                        </div>
+                    </section>    
+                </div>
+                <div class="slidebox">
+                    <div class="banklist">
+                        <div class="lis">
+                            <div class="content">
+                                <p>2013.12.23</p>
+                                <div>充值120.00元</div>
+                                <span class="sb">失败</span>
+                                <i class="icoFt jt icon-jiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <section class="info">
+                        <div class="wapper">
+                            <a href="javascript:void(0)" class="rechartbtn">充值</a>
+                            <div>
+                                <p>完成时间：2015.12.13</p>
+                                <p>充值金额：15,000,000元</p>
+                                <p>实际金额：30,000,000元</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-            <div class="slidebox">
-                 <div class="banklist">
-                    <div class="lis">
-                        <div class="content">
-                            <p>2013.12.23</p>
-                            <div>充值120.00元</div>
-                            <span class="jxz">申请中</span>
-                            <i class="icoFt jt icon-jiantou"></i>
-                        </div>
-                    </div>
-                </div>
-                <section class="info">
-                    <div class="wapper">
-                        <div>
-                           
-                            <p>完成时间：2015.12.13</p>
-                            <p>充值金额：15,000,000元</p>
-                            <p>实际金额：30,000,000元</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="slidebox">
-                <div class="banklist">
-                    <div class="lis">
-                        <div class="content">
-                            <p>2013.12.23</p>
-                            <div>充值120.00元</div>
-                            <span class="cg">成功</span>
-                            <i class="icoFt jt icon-jiantou"></i>
-                        </div>
-                    </div>
-                </div>
-                 <section class="info">
-                    <div class="wapper">
-                         <div>
-                           
-                            <p>完成时间：2015.12.13</p>
-                            <p>充值金额：15,000,000元</p>
-                            <p>实际金额：30,000,000元</p>
-                        </div>
-                    </div>
-                </section>    
-            </div>
-            <div class="slidebox">
-                <div class="banklist">
-                    <div class="lis">
-                        <div class="content">
-                            <p>2013.12.23</p>
-                            <div>充值120.00元</div>
-                            <span class="sb">失败</span>
-                            <i class="icoFt jt icon-jiantou"></i>
-                        </div>
-                    </div>
-                </div>
-                 <section class="info">
-                    <div class="wapper">
-                        <a href="javascript:void(0)" class="rechartbtn">充值</a>
-                        <div>
-                            <p>完成时间：2015.12.13</p>
-                            <p>充值金额：15,000,000元</p>
-                            <p>实际金额：30,000,000元</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+             <div class="pageloading">
+                数据加载中<i class="icoFt icon-loading1"></i>
+             </div>
 			
 			     
 
@@ -120,6 +126,16 @@
         })
     </script>
 	<!--组件-->
+
+    <!--页面-->
+    <script type="text/javascript" src="../static/js/page.js"></script>
+    <!--页面JS-->
+    <script>
+        $.page(function(){
+             var data='<div class="banklist">fsdfsafdsf</div>';
+             $(".loadingbox:visible").append(data);
+        })
+    </script>
 
 	
 	

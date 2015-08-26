@@ -299,6 +299,9 @@ button:focus {
 .box .container {
   min-height: 500px;
 }
+.box .footer {
+  background-color: #525252;
+}
 .box .footer .warp {
   width: 1132px;
   margin: 0px auto;

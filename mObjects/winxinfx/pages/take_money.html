@@ -61,30 +61,37 @@
 				
 					<div class="content-view">
 						<div class="conto" style="display:block">
-							<a href="#" class="lclist">
-
-								<div class="date">2015.12.1</div>
-								<div class="money">345元</div>
-								<div class="status">申请中</div>
+							<div class="loadingbox">
 								
-							</a>
+								<a href="#" class="lclist">
 
-							<a href="#" class="lclist">
+									<div class="date">2015.12.1</div>
+									<div class="money">345元</div>
+									<div class="status">申请中</div>
+									
+								</a>
 
-								<div class="date">2015.12.1</div>
-								<div class="money">345元</div>
-								<div class="status">已完成</div>
-								
-							</a>
+								<a href="#" class="lclist">
+
+									<div class="date">2015.12.1</div>
+									<div class="money">345元</div>
+									<div class="status">已完成</div>
+									
+								</a>
 
 
-							<a href="#" class="lclist">
+								<a href="#" class="lclist">
 
-								<div class="date">2015.12.1</div>
-								<div class="money">345元</div>
-								<div class="status">已完成</div>
-								
-							</a>
+									<div class="date">2015.12.1</div>
+									<div class="money">345元</div>
+									<div class="status">已完成</div>
+									
+								</a>
+							</div>
+							<div class="pageloading">
+								数据加载中<i class="icoFt icon-loading1"></i>
+							</div>
+
 							
 						
 					
@@ -141,6 +148,20 @@
 
 	})
 		
+	</script>
+
+
+	<!--页面-->
+	<script type="text/javascript" src="../static/js/page.js"></script>
+	<!--页面JS-->
+	<script>
+		$.page(function(){
+			 var data='<div class="banklist">fsdfsafdsf</div>';
+			 
+			 	$(".loadingbox:visible").append(data);
+			 
+            
+		})
 	</script>
 
 

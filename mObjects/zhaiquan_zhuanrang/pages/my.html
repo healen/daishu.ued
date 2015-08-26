@@ -75,59 +75,48 @@
 					</div>
 					<div class="content-view">
 						<div class="conto" style="display:block">
-							<div class="lclist">
-								<section>
-									<p class="title hei">
-										投资号1560007492062
-									</p>
-								</section>
-								<section>
-									<p class="title">天天赚789078123456期</p>
-								</section>
-								<section>
-									<p>购买时间：2015.03.23</p>
-									<p>投资金额：50000</p>
-								</section>
-								<section>
-									<p>投资平台：袋鼠网</p>
+							 <div class="loadingbox">
+							 	
+							 	<div class="lclist">
+									<section>
+										<p class="title hei">
+											投资号1560007492062
+										</p>
+									</section>
+									<section>
+										<p class="title">天天赚789078123456期</p>
+									</section>
+									<section>
+										<p>购买时间：2015.03.23</p>
+										<p>投资金额：50000</p>
+									</section>
+									<section>
+										<p>投资平台：贷鼠网</p>
+										
+									</section>
+
 									
-								</section>
+								</div>
+								<div class="lclist">
+									<section>
+										<p class="title hei">
+											投资号1560007492062
+										</p>
+									</section>
+									<section>
+										<p class="title">天天赚789078123456期</p>
+									</section>
+									<section>
+										<p>购买时间：2015.03.23</p>
+										<p>投资金额：50000</p>
+									</section>
+									
+								</div>
 
-								<a href="#" class="paybtn">支付</a>
-								
-							</div>
-
-							<div class="lclist">
-								<section>
-									<p class="title hei">
-										投资号1560007492062
-									</p>
-								</section>
-								<section>
-									<p class="title">天天赚789078123456期</p>
-								</section>
-								<section>
-									<p>购买时间：2015.03.23</p>
-									<p>投资金额：50000</p>
-								</section>
-								
-							</div>
-
-							<div class="lclist">
-								<section>
-									<p class="title hei">
-										投资号1560007492062
-									</p>
-								</section>
-								<section>
-									<p class="title">天天赚789078123456期</p>
-								</section>
-								<section>
-									<p>购买时间：2015.03.23</p>
-									<p>投资金额：50000</p>
-								</section>
-								
-							</div>
+							 </div>
+							 <div class="pageloading">
+								数据加载中<i class="icoFt icon-loading1"></i>
+							 </div>
 
 							
 						</div>
@@ -140,20 +129,27 @@
 						</div>
 
 						<div class="conto">
-							<div class="lclist">
-								<section>
-									<p class="title hei">
-										投资号1560007492062
-									</p>
-								</section>
-								<section>
-									<p class="title">天天赚789078123456期</p>
-								</section>
-								<section>
-									<p>购买时间：2015.03.23</p>
-									<p>投资金额：50000</p>
-								</section>
+							<div class="loadingbox">
+								<div class="lclist">
+									<section>
+										<p class="title hei">
+											投资号1560007492062
+										</p>
+									</section>
+									<section>
+										<p class="title">天天赚789078123456期</p>
+									</section>
+									<section>
+										<p>购买时间：2015.03.23</p>
+										<p>投资金额：50000</p>
+									</section>
+								</div>
+								
 							</div>
+							 <div class="pageloading">
+								数据加载中<i class="icoFt icon-loading1"></i>
+							 </div>
+							
 						</div>
 
 						
@@ -181,6 +177,15 @@
 	<!--页面-->
 	<script type="text/javascript" src="../static/js/pages/my.js"></script>
 	<!--页面JS-->
+	<!--页面-->
+	<script type="text/javascript" src="../static/js/page.js"></script>
+	<!--页面JS-->
+	<script>
+		$.page(function(){
+			 var data='<div class="banklist">fsdfsafdsf</div>';
+			 $(".loadingbox:visible").append(data);
+		})
+	</script>
 	
 
 </body>

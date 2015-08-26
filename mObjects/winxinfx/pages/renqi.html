@@ -47,48 +47,62 @@
 						<a href="javascript:void(0)" class="tabbtn">未关注(9)</a>
 					</div>
 					<div class="content-view">
+
+						
 						<div class="conto" style="display:block">
-							<div class="lclist">
-								<img src="../static/img/temp/tx.png" alt="" >
-								<div class="name">张晓东</div>
-								<span>2015-06-20</span>
+							<div class="loadingbox">
+							
+								<div class="lclist">
+									<img src="../static/img/temp/tx.png" alt="" >
+									<div class="name">张晓东</div>
+									<span>2015-06-20</span>
+								</div>
+								<div class="lclist">
+									<img src="../static/img/temp/tx.png" alt="" >
+									<div class="name">张晓东</div>
+									<span>2015-06-20</span>
+								</div>
+								<div class="lclist">
+									<img src="../static/img/temp/tx.png" alt="" >
+									<div class="name">张晓东</div>
+									<span>2015-06-20</span>
+								</div>
 							</div>
-							<div class="lclist">
-								<img src="../static/img/temp/tx.png" alt="" >
-								<div class="name">张晓东</div>
-								<span>2015-06-20</span>
-							</div>
-							<div class="lclist">
-								<img src="../static/img/temp/tx.png" alt="" >
-								<div class="name">张晓东</div>
-								<span>2015-06-20</span>
+							<div class="pageloading">
+								数据加载中<i class="icoFt icon-loading1"></i>
 							</div>
 						</div>
 						<div class="conto">
-							<div class="lclist gray">
-								<img src="../static/img/temp/tx.png" alt="">
-								<div class="name">未知</div>
-								<span>2015-06-20</span>
+							<div class="loadingbox">
+								
+								<div class="lclist gray">
+									<img src="../static/img/temp/tx.png" alt="">
+									<div class="name">未知</div>
+									<span>2015-06-20</span>
+								</div>
+								<div class="lclist gray">
+									<img src="../static/img/temp/tx.png" alt="">
+									<div class="name">未知</div>
+									<span>2015-06-20</span>
+								</div>
+								<div class="lclist gray">
+									<img src="../static/img/temp/tx.png" alt="">
+									<div class="name">未知</div>
+									<span>2015-06-20</span>
+								</div>
+								<div class="lclist gray">
+									<img src="../static/img/temp/tx.png" alt="">
+									<div class="name">未知</div>
+									<span>2015-06-20</span>
+								</div>
+								<div class="lclist gray">
+									<img src="../static/img/temp/tx.png" alt="">
+									<div class="name">未知</div>
+									<span>2015-06-20</span>
+								</div>
 							</div>
-							<div class="lclist gray">
-								<img src="../static/img/temp/tx.png" alt="">
-								<div class="name">未知</div>
-								<span>2015-06-20</span>
-							</div>
-							<div class="lclist gray">
-								<img src="../static/img/temp/tx.png" alt="">
-								<div class="name">未知</div>
-								<span>2015-06-20</span>
-							</div>
-							<div class="lclist gray">
-								<img src="../static/img/temp/tx.png" alt="">
-								<div class="name">未知</div>
-								<span>2015-06-20</span>
-							</div>
-							<div class="lclist gray">
-								<img src="../static/img/temp/tx.png" alt="">
-								<div class="name">未知</div>
-								<span>2015-06-20</span>
+							<div class="pageloading">
+								数据加载中<i class="icoFt icon-loading1"></i>
 							</div>
 							<!-- <div class="abortmsg">
 								<i class="icoFt icon-cool"></i>
@@ -112,6 +126,17 @@
 	<!--页面-->
 	<script type="text/javascript" src="../static/js/pages/my.js"></script>
 	<!--页面JS-->
+	<script type="text/javascript" src="../static/js/page.js"></script>
+	<!--页面JS-->
+	<script>
+		$.page(function(){
+			 var data='<div class="banklist">fsdfsafdsf</div>';
+			 
+			 	$(".loadingbox:visible").append(data);
+			 
+            
+		})
+	</script>
 	
 
 </body>

@@ -464,6 +464,28 @@ body > .warp {
 .mt20 {
   margin-top: 20px;
 }
+.pageloading {
+  text-align: center;
+  color: #999999;
+  padding: 5px;
+  width: 100px;
+  margin: 0px auto;
+  line-height: 17px;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+}
+.pageloading i {
+  margin-left: 0.5rem;
+}
+.pageloading i:before {
+  display: block;
+  -webkit-animation: rotate 700ms linear 0ms infinite;
+  -o-animation: rotate 700ms linear 0ms infinite;
+  animation: rotate 700ms linear 0ms infinite;
+}
 .navbtn {
   height: 4.4rem;
   background: #ffffff;

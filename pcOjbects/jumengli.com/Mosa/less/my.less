@@ -1,7 +1,4 @@
-@import "../variables";
-@import "../lib/basic";
-@import "../lib/element";
-
+@import "../document";
 
 /*
 *2015
@@ -23,7 +20,7 @@ body{
         .index{
             height: @listTitleHeight;
             text-align:center;
-            background: @markBgColor;
+            background: @markBgColorMy;
             color: #fff;
             display: block;
             line-height: @listTitleHeight;
@@ -122,13 +119,37 @@ body{
             color: @myTextColor;
             background: #ffffff;
             margin-bottom: -1px;
-            border-top: 2px solid @markBgColor;
+            border-top: 2px solid @markBgColorMy;
             padding: 0px 25px;
         }
         .topcontent{
             background: #fff;
             margin-bottom: 7px;
             border:1px solid @borderColor1;
+            position: relative;
+            .auto_bid{
+                position: absolute;
+                right: 0px;
+                top: -1px;
+                overflow: hidden;
+                padding: 5px;
+                border:1px solid @markBgColorMy;
+                background-color: @markBgColorMy;
+
+                text-align: center;
+                // background: #efefef;
+                // border-top: none;
+                // border-right:none;
+
+           
+                color: #ffffff;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 0px 0px 0px 20px;
+
+
+            }
+
             .warp{
                 padding: 0px 24px;
                 
@@ -237,9 +258,9 @@ body{
                                        
                                     }
                                     a.txj{
-                                        background: @markBgColor;
+                                        background: @markBgColorMy;
                                         &:hover{
-                                            background-color:darken(@markBgColor, 10%);
+                                            background-color:darken(@markBgColorMy, 10%);
                                         }
 
                                     }
@@ -309,7 +330,7 @@ body{
                                     color: @markBgColor;
                                 }
                                 span.lan{
-                                    color: @markBgColor;
+                                    color: @markBgColorMy;
                                 }
                             }
                             margin-bottom: 30px;
@@ -390,9 +411,9 @@ body{
        
     }
     a.txj{
-        background: @markBgColor;
+        background: @markBgColorMy;
         &:hover{
-            background-color:darken(@markBgColor, 10%);
+            background-color:darken(@markBgColorMy, 10%);
         }
 
     }

@@ -133,6 +133,21 @@ body {
   background: #fff;
   margin-bottom: 7px;
   border: 1px solid #eeeeee;
+  position: relative;
+}
+.la-my .myright .topcontent .auto_bid {
+  position: absolute;
+  right: 0px;
+  top: -1px;
+  overflow: hidden;
+  padding: 5px;
+  border: 1px solid #06ade1;
+  background-color: #06ade1;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px 0px 0px 20px;
 }
 .la-my .myright .topcontent .warp {
   padding: 0px 24px;

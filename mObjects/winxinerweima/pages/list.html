@@ -28,13 +28,39 @@
 <body>
 	<section class="warp">
 		<section class="body-content">
-
-
-          
             <div class="slidebox">
-
                 <div class="loadingbox">
-                     <div class="banklist">
+
+                    <div class="loadingbox">
+                        
+                        <div class="banklist">
+                                <div class="lis">
+                                    <div class="content">
+                                        <span>姓名：<em>张晓东</em></span>
+                                    </div>
+                                    <div class="content">
+                                        <span>时间：<em>2015.5.16</em></span>
+                                    </div>
+                                   
+
+                                    <div class="content">
+                                        <span>电话：<em>15600074926</em></span>
+                                    </div>
+                                    
+                                   
+                                    <div class="content">
+                                        <div>贷款金额：<em>10000.00元</em></div>
+                                        
+                                    </div>
+                                    <div class="content">
+                                        <span>提成：<em>10%</em></span>
+                                    </div>
+                                </div>
+                                 <span class="status dff">
+                                    已审核
+                                </span>
+                        </div>
+                        <div class="banklist">
                             <div class="lis">
                                 <div class="content">
                                     <span>姓名：<em>张晓东</em></span>
@@ -42,13 +68,9 @@
                                 <div class="content">
                                     <span>时间：<em>2015.5.16</em></span>
                                 </div>
-                               
-
                                 <div class="content">
                                     <span>电话：<em>15600074926</em></span>
                                 </div>
-                                
-                               
                                 <div class="content">
                                     <div>贷款金额：<em>10000.00元</em></div>
                                     
@@ -57,8 +79,8 @@
                                     <span>提成：<em>10%</em></span>
                                 </div>
                             </div>
-                             <span class="status dff">
-                                已审核
+                            <span class="status yjj">
+                                已拒绝
                             </span>
                         </div>
                         <div class="banklist">
@@ -69,8 +91,6 @@
                                 <div class="content">
                                     <span>时间：<em>2015.5.16</em></span>
                                 </div>
-                              
-
                                 <div class="content">
                                     <span>电话：<em>15600074926</em></span>
                                 </div>
@@ -145,62 +165,36 @@
                                 已拒绝
                             </span>
                         </div>
-                        <div class="banklist">
-                            <div class="lis">
-                                <div class="content">
-                                    <span>姓名：<em>张晓东</em></span>
-                                </div>
-                                <div class="content">
-                                    <span>时间：<em>2015.5.16</em></span>
-                                </div>
-                              
-
-                                <div class="content">
-                                    <span>电话：<em>15600074926</em></span>
-                                </div>
-                                
-                               
-                                <div class="content">
-                                    <div>贷款金额：<em>10000.00元</em></div>
-                                    
-                                </div>
-                                <div class="content">
-                                    <span>提成：<em>10%</em></span>
-                                </div>
-                            </div>
-
-                            <span class="status yjj">
-                                已拒绝
-                            </span>
-                        </div>
+                    </div>
                     
                 </div>
-               
-                <div class="loadingmore">
-                    <span>按下加载更多...</span>
-                </div>
+                <div class="pageloading">
+                    数据加载中<i class="icoFt icon-loading1"></i>
+                </div>              
                
             </div>
-			
-			     
-
-
-                
-
-                
-				
 		</section>
 	</section>
 	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
 
     <script>
-
         $(".loadingmore span").on("click",function(){
             var data='<div class="banklist">fsdfsafdsf</div>'
-            $(".loadingbox").append(data)
-
+            $(".loadingbox:visible").append(data)
         })
-        
+    </script>
+
+    <!--页面-->
+    <script type="text/javascript" src="../static/js/page.js"></script>
+    <!--页面JS-->
+    <script>
+        $.page(function(){
+             var data='<div class="banklist">fsdfsafdsf</div>';
+             
+                $(".loadingbox:visible").append(data);
+             
+            
+        })
     </script>
 	
 	
