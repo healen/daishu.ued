@@ -296,7 +296,8 @@ button:focus {
 .box .header .hbody {
   width: 1132px;
   height: 100px;
-  overflow: hidden;
+  position: relative;
+  z-index: 9;
   margin: auto;
   *zoom: 1;
 }
@@ -326,25 +327,27 @@ button:focus {
   height: 100px;
   float: left;
 }
-.box .header .hbody ul {
+.box .header .hbody > ul {
   *zoom: 1;
   margin-top: 30px;
 }
-.box .header .hbody ul:after {
+.box .header .hbody > ul:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
   clear: both;
 }
-.box .header .hbody ul.nav {
+.box .header .hbody > ul.nav {
   font-size: 18px;
   float: right;
 }
-.box .header .hbody ul.nav li {
+.box .header .hbody > ul.nav > li {
   float: left;
+  position: relative;
+  z-index: 9;
 }
-.box .header .hbody ul.nav li a {
+.box .header .hbody > ul.nav > li > a {
   display: inline-block;
   height: 37px;
   line-height: 37px;
@@ -352,13 +355,42 @@ button:focus {
   margin-left: 20px;
   border-radius: 5px;
 }
-.box .header .hbody ul.nav li a:hover {
+.box .header .hbody > ul.nav > li > a:hover {
   color: #ffffff;
-  background: #06ade1;
+  background: rgba(73, 73, 73, 0.9);
 }
-.box .header .hbody ul.nav li a.on {
+.box .header .hbody > ul.nav > li > a:hover .down_img {
+  border-top: 4px solid #ffffff;
+}
+.box .header .hbody > ul.nav > li > a.on {
   color: #ffffff;
-  background: #06ade1;
+  background: rgba(73, 73, 73, 0.9);
+}
+.box .header .hbody > ul.nav > li > a.on .down_img {
+  border-top: 4px solid #ffffff;
+}
+.box .header .hbody > ul.nav > li .nav-dropdown {
+  position: absolute;
+  padding-left: 20px;
+  width: 110px;
+  display: none;
+}
+.box .header .hbody > ul.nav > li .nav-dropdown ul {
+  border-radius: 0px 0px 5px 5px;
+  margin-top: -2px;
+  border-top: 1px solid #dedede;
+  background: rgba(73, 73, 73, 0.9);
+  font-size: 14px;
+}
+.box .header .hbody > ul.nav > li .nav-dropdown ul li a {
+  margin-left: 0px;
+  display: block;
+  color: #ffffff;
+  line-height: 38px;
+  text-align: center;
+}
+.box .header .hbody > ul.nav > li .nav-dropdown ul li a:hover {
+  color: #06ade1;
 }
 .box .container {
   min-height: 500px;
@@ -647,6 +679,16 @@ span.e {
 }
 .show {
   display: block;
+}
+.down_img {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top: 4px solid #666;
+  margin-top: -10px;
+  margin-left: 4px;
+  *margin-top: -16px;
 }
 .page-list {
   text-align: center;

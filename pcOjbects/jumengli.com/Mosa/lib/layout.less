@@ -87,7 +87,9 @@
         }
         .hbody{
             .-box ._size(@documentWidth,100px);
-            overflow: hidden;
+            position: relative;
+            z-index: 9;
+            // overflow: hidden;
             margin: auto;
             ._clearfix();
             h1{
@@ -104,15 +106,17 @@
                 }
                 float: left;
             }
-            ul{
+            &>ul{
                 ._clearfix();
                 margin-top: 30px;
                 &.nav{
                     font-size: @titleFoutSize;
                     float: right;
-                    li{
+                    &>li{
                         float: left;
-                        a{
+                        position: relative;
+                        z-index: 9;
+                        &>a{
                             display: inline-block;
                             height: 37px;
                             line-height: 37px;
@@ -121,12 +125,49 @@
                             border-radius: 5px;
                             &:hover{
                                 color: #ffffff;
-                                background: @markBgColor;
+                                background: rgba(73,73,73,0.9);
+                                .down_img{
+                                    border-top: 4px solid #ffffff;
+                                }
                             }
                             &.on{
                                 color: #ffffff;
-                                background: @markBgColor;
+                                background:rgba(73,73,73,0.9);
+                                .down_img{
+                                    border-top: 4px solid #ffffff;
+                                }
+
                             }
+                        }
+
+                        .nav-dropdown{
+                            position: absolute;
+                            padding-left: 20px;
+                             width: 110px;
+                             display: none;
+                            ul{
+                                // margin-left: 22px;
+                                border-radius: 0px 0px 5px 5px;
+
+                                margin-top: -2px;
+                                border-top:1px solid #dedede;
+                                background:rgba(73,73,73,0.9);
+                                font-size: 14px;
+                                // border-radius: 5px;
+                                li{
+                                    a{
+                                        margin-left: 0px;
+                                        display: block;
+                                        color: #ffffff;
+                                        line-height: 38px;
+                                        text-align: center;
+                                        &:hover{
+                                            color: @linkColorHover;
+                                        }
+                                    }
+                                }
+                            }
+
                         }
                     }
                 }

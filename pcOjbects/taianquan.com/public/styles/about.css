@@ -226,6 +226,9 @@ body {
 .la-my .myleft .list .navbtn.on > a span {
   color: #ff6c00;
 }
+.la-my .myleft .list .navbtn:hover > a span {
+  color: #ff6c00;
+}
 .la-my .myright .mbx {
   line-height: 67px;
   border: 1px solid #eeeeee;

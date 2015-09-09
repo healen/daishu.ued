@@ -74,13 +74,13 @@
             "position":"fixed",
             "top":"0px",
             "left":"0px",
-            "z-index":"1000"
+            "z-index":"10000"
         })
         dialogW=$(".popup .dialog").width();
         dialogH=$(".popup .dialog").height();
 
         $(".popup .dialog").css({
-            "z-index":"1001",
+            "z-index":"10001",
             "left":"50%",
             "top":"50%",
             "margin-left":-dialogW/2,

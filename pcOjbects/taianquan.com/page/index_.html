@@ -5,6 +5,12 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
 	<link rel="stylesheet" href="../public/styles/index.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+    <style type="text/css">
+        .online-service{
+            z-index: 800;
+        }
+    </style>
 </head>
 <body>
 	<div class="box">
@@ -187,9 +193,12 @@
 
         <div class="banner" id="swipe" >
     	    <ul>
-    	    	 <li style="background:url(../public/img/banner/banner-1.jpg) 50% 0 no-repeat;display:block">
-    	            <a href="#"></a>
+    	    	 <li style="background:url(../public/img/banner/banner-1.jpg) 50% 0 no-repeat;display:block" onclick="window.open('http://www.taianquan.com')">
+    	            
     	        </li>
+                <li style="background:url(../public/img/banner/banner-1.jpg) 50% 0 no-repeat;display:block" onclick="window.open('http://www.taianquan.com')">
+                    
+                </li>
     	    </ul>
     	    <a class="prev jt" href="javascript:void(0)"></a> <a class="next jt" href="javascript:void(0)"></a>
     	</div>
@@ -1172,12 +1181,15 @@
 
 	</div>
 
+  
+
 
 
 
 	<script src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
 	<script type="text/javascript" src="../public/scripts/swipe.js"></script>
 	<script src="../public/scripts/lib/chaffle.min.js"></script> 
+   
 	<script>
 		$(function(){
 	        $("#swipe").swipe({
@@ -1245,13 +1257,10 @@
 
             });
 
-             $("#userInfo").hover(function () {
+        $("#userInfo").hover(function () {
             $("#menu-ucenter").show();
         }, function () {
-
-            //$("#menu-ucenter").hide();
-
-
+                    //$("#menu-ucenter").hide();
         });
         $("#userInfo").on("mouseleave", function () {
             $("#menu-ucenter").hide();
@@ -1263,33 +1272,66 @@
         })
 
 
-            (function(time){
-                    var timer=null;
-                    clearInterval(timer)
-                    $(".scrollbox").hover(function(){
-                         clearInterval(timer)
-                    },function(){
-                        timer=setInterval(function(){
-                                scrolltops()
-                         },time)
-                    })
-                    function scrolltops(){
-                        $(".scrolltops").animate({
-                            "margin-top":"-120px"
-                        },500,function(){
-                            $(this).css({
-                                "margin-top":"0px"
-                            });
-                            var clones=$(this).find(".scroll").eq(0).clone();
-                            $(this).find(".scroll").eq(0).remove()
-                            $(this).append(clones);
-                        })
-                    }
-                    timer=setInterval(function(){
-                            scrolltops()
-                    },time)
-            })(6000)
+            // (function(time){
+            //         var timer=null;
+            //         clearInterval(timer)
+            //         $(".scrollbox").hover(function(){
+            //              clearInterval(timer)
+            //         },function(){
+            //             timer=setInterval(function(){
+            //                     scrolltops()
+            //              },time)
+            //         })
+            //         function scrolltops(){
+            //             $(".scrolltops").animate({
+            //                 "margin-top":"-120px"
+            //             },500,function(){
+            //                 $(this).css({
+            //                     "margin-top":"0px"
+            //                 });
+            //                 var clones=$(this).find(".scroll").eq(0).clone();
+            //                 $(this).find(".scroll").eq(0).remove()
+            //                 $(this).append(clones);
+            //             })
+            //         }
+            //         timer=setInterval(function(){
+            //                 scrolltops()
+            //         },time)
+            // })(6000)
 	    })
 	</script>
+
+      <div id="popup"></div>
+  
+        
+      <script type="text/javascript" src="../public/scripts/popup.js"></script>
+      <script type="text/javascript">
+       // $.popup({
+       //      title: "网站维护中", //标题
+       //      content: '<div class="basicfrome" style="padding:10px">'+
+       //                  '<h2>尊敬的用户：</h2>'+
+       //                  '<p>由于网站后台更新，本网站于2015年9月2日8:00关站维护（预计更新花费时间12小时），9月3日正常运营。敬请各位投资客户谅解。</p>'+
+       //                 '<p style="">客服电话： 400-0538722&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05382103456</p>'+
+       //                 ' <p style="text-align:right">太安全网贷平台</p>'+
+       //                  '<p style="text-align:right">2015年9月1日星期二</p>'+
+       //              '</div>', 
+       //      close: false, //是否关闭
+       //      closeCallback:null,
+       //      popupStyle: "",
+       //      popupPosition:"fixed",
+       //      btnList: [
+       //          // {
+       //          //     "class": "",
+       //          //     "text": "确认",
+       //          //     "callback": null
+       //          // },
+       //          // {
+       //          //     "class": "comfbox",
+       //          //     "text": "取消",
+       //          //     "callback": null
+       //          // }
+       //      ]
+       // })
+   </script>
 </body>
 </html>

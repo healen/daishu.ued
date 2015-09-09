@@ -441,6 +441,37 @@
             var status = $(obj).attr("remark");
             //getInfolist(status);
         }
+
+
+         $(function(){
+            $(".table-list-item").hover(function(){
+                $(this).addClass("bg-gray");    
+            },function(){
+                $(this).removeClass("bg-gray");     
+            })
+            $(".invest-speed-line").each(function(){
+                $(this).animate({width:$(this).attr("data-value")+"%"});
+            })
+            $(".nav-list-top").hover(function(){
+                var index = $(".nav-list-top").index($(this));
+                $(".nav-dropdown").eq(index).show();    
+            },function(){
+                var index = $(".nav-list-top").index($(this));
+                $(".nav-dropdown").eq(index).hide();    
+            })
+            
+            $("#online-service-hide").click(function(){
+                $("#online-service-show").show();
+                $(this).hide(); 
+                $("#online-service-show").animate({left:0},200);
+            })
+            $("#online-service-show").hover(function(){
+
+            },function(){
+                $("#online-service-show").animate({left:-140},200);    
+                $("#online-service-hide").show(350);
+            })
+        });
    </script>
     
 </body>

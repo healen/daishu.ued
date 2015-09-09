@@ -270,32 +270,51 @@
 												</div>
 
 												<div class="imgboxlist">
-
-													<div class="imgwarp">
-														<img src="../public/img/temp/t.jpg" alt="图片标题">
-														<div class="title">图片标题</div>
-													</div>
-													
-
-													<div class="imgwarp">
-														<img src="../public/img/temp/292148289hfa.jpg" alt="图片标题2">
-														<div class="title">图片标题2</div>
-													</div>
-
-													<div class="imgwarp">
-														<img src="../public/img/temp/t.jpg" alt="图片标题3">
-														<div class="title">图片标题3</div>
-													</div>
-													
-
-													<div class="imgwarp">
-														<img src="../public/img/temp/292148289hfa.jpg" alt="图片标题4">
-														<div class="title">图片标题4</div>
-													</div>
-
-												
-												
-												</div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645075094207105425424.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645075094207105425424.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645075191962434826841.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645075191962434826841.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645075307393644041290.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645075307393644041290.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645077336717972743699.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645077336717972743699.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645077451855787728902.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645077451855787728902.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645079434401641886734.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645079434401641886734.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645080753853918883170.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645080753853918883170.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645082869799229311820.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645082869799229311820.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645083351934236887068.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645083351934236887068.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645085107137016914175.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645085107137016914175.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                            <div class="imgwarp mlbig">
+						                                <img src="http://img.dongyingdai.net/0x600/upload/image/20150829/6357645088622805743455064.jpg" origin-src="http://img.dongyingdai.net/upload/image/20150829/6357645088622805743455064.jpg" alt="" width="600" height="600">
+						                                <div class="title"></div>
+						                            </div>
+						                    </div>
 											</div>
 
 										</div>
@@ -418,7 +437,8 @@
 		<div class="imgshowmask"></div>
 
 		<div class="imgshow">
-			<img src="../public/images/loading.gif" alt="">
+			<img src="" alt="">
+			<span class="lodingss"></span>
 
 			<h2 class="title">标题</h2>
 
@@ -493,7 +513,7 @@
 					var eq=$(this).index();
 					eqDEFAULT=eq
 					showimg($(this),eq);
-					console.log(eqDEFAULT)
+					// console.log(eqDEFAULT)
 				})
 				$(".imgshow").hover(function(){
 					$(this).find("div").animate({
@@ -533,20 +553,32 @@
 					$(".imgboxlist .imgwarp").eq(eqDEFAULT).trigger("click");
 				})
 				function showimg(obj,eq){
-					var src=obj.find("img").attr("src");
-					var title=obj.find("img").attr("alt")
-					$(".imgshow .title").html(title)
-					$(".imgshow").find("img").attr("src",src).css({height:"400px"});
-					var width=$(".imgshow").find("img").width();
-					var height=$(".imgshow").find("img").height();
-					$(".imgshow").css({
-						"width":width+"px",
-						"height":height+"px",
-						"left":"50%",
-						"top":"50%",
-						"margin-left":parseInt((0-width)/2)+"px",
-						"margin-top":parseInt((0-height)/2)+"px",
+
+					var src=obj.find("img").attr("origin-src");
+					var title=obj.find("img").attr("alt");
+					$(".imgshow .title").html(title);
+					$(".imgshow").find("img").attr("src",src).css({"max-height":"800px"});
+
+					$(".imgshow").find("img").load(function(){
+						// alert(1)
+						
+						var width=$(".imgshow").find("img").width();
+						var height=$(".imgshow").find("img").height();
+						$(".imgshow").css({
+							"width":width+"px",
+							"height":height+"px",
+							"left":"50%",
+							"top":"50%",
+							"margin-left":parseInt((0-width)/2)+"px",
+							"margin-top":parseInt((0-height)/2)+"px",
+						})
+						$(".lodingss").hide();
 					})
+
+
+					$(".lodingss").show();
+
+					
 					//alert(src)
 					$(".imgshowmask,.imgshow").css({"visibility": "visible"});
 				}
